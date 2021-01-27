@@ -1,0 +1,22 @@
+<h1 class="text-center">{{title}}</h1>
+
+<form action="/products" method="POST">
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input type="text" name="name" class="form-control">	
+	</div>
+	<div class="form-group">
+		<label for="type">Type</label>
+		<input type="text" name="type" class="form-control">
+	</div>
+	<input type="submit" value="Add Product" class="btn btn-primary">
+</form>
+
+<ul class="list-group">
+	{{#each products}}
+	<li class="list-group-item">{{this.name}}: {{this.type}}</li>
+	{{/each}}
+</ul>
+
+<h4>API link</h4>
+<a href="/products" class="btn btn-dark">Visit API</a>
