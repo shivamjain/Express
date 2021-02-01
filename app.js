@@ -17,6 +17,7 @@ app.set('view engine', 'handlebars');
 app.use(express.json()); //handle raw json
 app.use(express.urlencoded({extended: false})); //handle form submission
 
+//Render index.handlebars on root
 app.get('/', (req, res) => {
 	res.render('index',{
 		title: 'Products list',
