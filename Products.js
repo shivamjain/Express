@@ -1,4 +1,5 @@
-const products = [{
+const products = [
+{
 	id:1,
 	name:"iphone",
 	type:"mobile",
@@ -27,6 +28,7 @@ const products = [{
 	name:"Tata harrier",
 	type:"Car",
 	status:"active"
-}];
+}
+];
 
 module.exports = products;
