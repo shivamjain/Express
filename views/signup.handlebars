@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+
+<h3>Users details</h3>
+
+<ul class="list-group">
+	{{#each users}}
+	<li class="list-group-item">{{this.id}} - {{this.name}} - {{this.password}} - {{this.role}}</li>
+	{{/each}}
+</ul>

@@ -7,7 +7,7 @@ const logger = require('./middleware/logger.js');
 const products = require('./Products.js');
 
 //Initialize logger middlewre
-app.use(logger);
+//app.use(logger);
 
 //Handlebars Middleware
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
@@ -34,6 +34,8 @@ app.use('/alien', require('./routes/alien.js'));
 //Products API Routes
 app.use('/products', require('./routes/products.js'));
 
+//
+app.use('/signup', require('./routes/signup.js'));
 //listening on port 9000
 const PORT = 9000;
 app.listen(PORT, (req, res) =>{		
